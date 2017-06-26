@@ -1,0 +1,2275 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.csre.iitb.ac.in/siim/schema"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.csre.iitb.ac.in/siim/schema"
+     versionIRI="http://www.csre.iitb.ac.in/siim/schema/1.0.0">
+    <Prefix name="" IRI="http://www.csre.iitb/siim/BBoxSpatialRelations#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="xsp" IRI="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="sqwrl" IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="schema" IRI="http://www.csre.iitb.ac.in/siim/schema#"/>
+    <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
+    <Prefix name="BBoxSpatialRelations" IRI="http://www.csre.iitb/siim/BBoxSpatialRelations#"/>
+    <Prefix name="BBoxSpatialRelations1" IRI="http://www.csre.iitb.ac.in/siim/BBoxSpatialRelations1#"/>
+    <Prefix name="BBoxSpatialRelations2" IRI="http://www.csre.iitb.ac.in/siim/BBoxSpatialRelations#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">&quot;This Ontology Specifies Rules for extracting spatial relations between bounding boxes&quot;</Literal>
+    </Annotation>
+    <Declaration>
+        <DataProperty IRI="#SD_b"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#topologicalRelation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mean_NIR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StagnatedFloodWater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#River"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.csre.iitb.ac.in/siim/data#EO-1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#north"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SD_R"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BoundingBox"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#north_west"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompletelyFloodedRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#west"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonSedimentFloodRegion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#extent"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#spatialRule"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SD_a"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mean_glcm_variance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasUpperLat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SD_glcm_mean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.csre.iitb.ac.in/siim/data#ALI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DC"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weak_south_west"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SD_NIR"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#NTPPi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#perimeter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTileOriginLat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#strong_north_east"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mean_glcm_contrast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FloodedMixedRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Connected"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FallowCropland"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EC_PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSpectralResolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#just_north"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#strong_north_west"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTileOrigin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#south"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cropland"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCentroid"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TPPi_NTPPi_EQ"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SD_mndwi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weak_bounded_east"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLeftLong"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSceneId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfTiles"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasImageOriginLong"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cloud"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTileCentreGML"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#predictiveModel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSceneRow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bounded_south"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mean_L"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRegionClassType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mean_glcm_entropy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTileOriginW3C"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#just_south"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Water"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#textureFeatures"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasThumbnailAt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTileOriginLong"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#strong_west"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#indices"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SD_ndvi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTileSegMapAt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasImageOriginLat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FloodAffectedBuilding"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weak_bounded_south"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#colorFeatures"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mean_glcm_dissimilarity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWidth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#north_east"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consistsOfRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegionCentroid"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRegionCentroidNearByPlaceGeoName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SD_L"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.geonames.org/ontology#Feature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PO"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#area"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRediometricResolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weak_north_west"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTileOriginGML"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NewWaterAreas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SD_glcm_homogeneity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TPPi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartiallyFloodedCropland"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SD_glcm_entropy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consistsOfTile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weak_bounded_west"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IsolatedBuiltUp"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wetland"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasImageOrigin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LULCClassProbabilityEstimate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSpatialResolution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mean_b"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#south_east"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FloodedRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#strong_east"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SD_glcm_variance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bounded_east"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSensorName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SD_glcm_dissimilarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartiallyFloodedRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#just_west"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#shapeFeatures"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#orientation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTileCentreNearByPlaceGeoName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weak_north"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTileCentreLong"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mean_a"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLowerLat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TPP_NTPP_EQ"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#solidity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mean_glcm_homogeneity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minor_axis_length"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weak_north_east"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weak_east"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfBands"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lakes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mean_glcm_mean"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHeight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bounded_west"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#strong_bounded_north"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SD_glcm_correlation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#major_axis_length"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#strong_bounded_east"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToThings"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mean_R"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#regionFeatures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#installedInSatellite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BuiltUpAdjecentToRiver"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mean_mndwi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#elongation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aquiredOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTileCentreW3C"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Streams"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#strong_south_west"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mean_glcm_correlation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSatelliteName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agriculture"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SD_G"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BuiltUp"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#strong_north"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToImage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#strong_bounded_south"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FloodedAgriculture"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGeoCRS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#strong_south"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasImageDataType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasImagePixelSize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Residential"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consistsOfThings"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#south_west"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRightLong"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#just_east"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasImageFormat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weak_south_east"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasResolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#NTPP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SatelliteImage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LULCRegion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mean_ndvi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#directionalRelation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasScenePath"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mean_G"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTilePathInArchive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Satellite"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SD_glcm_second_moment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weak_west"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#selectedAttributes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToTile"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SD_glcm_contrast"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mean_glcm_second_moment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bounded_north"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#east"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#strong_south_east"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EQ"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TPP"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weak_south"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#strong_bounded_west"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBBox"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aquiredBySensor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGeoExtent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PredictiveModel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGroundSampleDistance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWithinTileRegionID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTileCentre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weak_bounded_north"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FloodedBuiltUp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Industrial_Commercial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SedimentedCloggedFloodRegion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTileCentreLat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EC"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDimension"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDegreeOfAdjecency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfRegions"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTemporalResolution"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#BuiltUpAdjecentToRiver"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#BuiltUp"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#EC"/>
+                <Class IRI="#River"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FloodAffectedBuilding"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#BuiltUp"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#EC"/>
+                <Class IRI="#StagnatedFloodWater"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Agriculture"/>
+        <Class IRI="#LULCRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuiltUp"/>
+        <Class IRI="#LULCRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuiltUpAdjecentToRiver"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cloud"/>
+        <Class IRI="#OtherRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompletelyFloodedRegion"/>
+        <Class IRI="#FloodedRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cropland"/>
+        <Class IRI="#Agriculture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FallowCropland"/>
+        <Class IRI="#Agriculture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FloodedAgriculture"/>
+        <Class IRI="#PartiallyFloodedRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FloodedBuiltUp"/>
+        <Class IRI="#PartiallyFloodedRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FloodedMixedRegion"/>
+        <Class IRI="#PartiallyFloodedRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FloodedRegion"/>
+        <Class IRI="#Wetland"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Industrial_Commercial"/>
+        <Class IRI="#BuiltUp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IsolatedBuiltUp"/>
+        <Class IRI="#BuiltUp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IsolatedBuiltUp"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LULCRegion"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lakes"/>
+        <Class IRI="#Water"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewWaterAreas"/>
+        <Class IRI="#LULCRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonSedimentFloodRegion"/>
+        <Class IRI="#CompletelyFloodedRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherRegion"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartiallyFloodedCropland"/>
+        <Class IRI="#NewWaterAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartiallyFloodedRegion"/>
+        <Class IRI="#FloodedRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Residential"/>
+        <Class IRI="#BuiltUp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#River"/>
+        <Class IRI="#Streams"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SedimentedCloggedFloodRegion"/>
+        <Class IRI="#CompletelyFloodedRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StagnatedFloodWater"/>
+        <Class IRI="#NewWaterAreas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Streams"/>
+        <Class IRI="#Water"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water"/>
+        <Class IRI="#LULCRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wetland"/>
+        <Class IRI="#LULCRegion"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Sensor"/>
+        <NamedIndividual IRI="http://www.csre.iitb.ac.in/siim/data#ALI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satellite"/>
+        <NamedIndividual IRI="http://www.csre.iitb.ac.in/siim/data#EO-1"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.csre.iitb.ac.in/siim/data#ALI"/>
+        <NamedIndividual IRI="http://www.csre.iitb.ac.in/siim/data#EO-1"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#installedInSatellite"/>
+        <NamedIndividual IRI="http://www.csre.iitb.ac.in/siim/data#ALI"/>
+        <NamedIndividual IRI="http://www.csre.iitb.ac.in/siim/data#EO-1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensorName"/>
+        <NamedIndividual IRI="http://www.csre.iitb.ac.in/siim/data#ALI"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ALI</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSatelliteName"/>
+        <NamedIndividual IRI="http://www.csre.iitb.ac.in/siim/data#EO-1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EO-1</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Connected"/>
+        <ObjectProperty IRI="#topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#DC"/>
+        <ObjectProperty IRI="#topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EC"/>
+        <ObjectProperty IRI="#EC_PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EC"/>
+        <ObjectProperty IRI="#topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EC_PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+        <ObjectProperty IRI="#topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EQ"/>
+        <ObjectProperty IRI="#EC_PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EQ"/>
+        <ObjectProperty IRI="#PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EQ"/>
+        <ObjectProperty IRI="#TPP_NTPP_EQ"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EQ"/>
+        <ObjectProperty IRI="#TPPi_NTPPi_EQ"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EQ"/>
+        <ObjectProperty IRI="#topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#NTPP"/>
+        <ObjectProperty IRI="#EC_PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#NTPP"/>
+        <ObjectProperty IRI="#PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#NTPP"/>
+        <ObjectProperty IRI="#TPP_NTPP_EQ"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#NTPP"/>
+        <ObjectProperty IRI="#topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#NTPPi"/>
+        <ObjectProperty IRI="#EC_PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#NTPPi"/>
+        <ObjectProperty IRI="#PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#NTPPi"/>
+        <ObjectProperty IRI="#TPPi_NTPPi_EQ"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#NTPPi"/>
+        <ObjectProperty IRI="#topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#PO"/>
+        <ObjectProperty IRI="#EC_PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#PO"/>
+        <ObjectProperty IRI="#PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#PO"/>
+        <ObjectProperty IRI="#topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+        <ObjectProperty IRI="#topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TPP"/>
+        <ObjectProperty IRI="#EC_PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TPP"/>
+        <ObjectProperty IRI="#PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TPP"/>
+        <ObjectProperty IRI="#TPP_NTPP_EQ"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TPP"/>
+        <ObjectProperty IRI="#topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TPP_NTPP_EQ"/>
+        <ObjectProperty IRI="#topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TPPi"/>
+        <ObjectProperty IRI="#EC_PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TPPi"/>
+        <ObjectProperty IRI="#PO_TPP_NTPP_EQ_TPPi_NTPPi"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TPPi"/>
+        <ObjectProperty IRI="#TPPi_NTPPi_EQ"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TPPi"/>
+        <ObjectProperty IRI="#topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TPPi_NTPPi_EQ"/>
+        <ObjectProperty IRI="#topologicalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongsToImage"/>
+        <ObjectProperty IRI="#belongsToThings"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongsToThings"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongsToTile"/>
+        <ObjectProperty IRI="#belongsToThings"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#bounded_east"/>
+        <ObjectProperty IRI="#east"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#bounded_north"/>
+        <ObjectProperty IRI="#north"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#bounded_south"/>
+        <ObjectProperty IRI="#south"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#bounded_west"/>
+        <ObjectProperty IRI="#west"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#consistsOfRegion"/>
+        <ObjectProperty IRI="#consistsOfThings"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#consistsOfThings"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#consistsOfTile"/>
+        <ObjectProperty IRI="#consistsOfThings"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#east"/>
+        <ObjectProperty IRI="#directionalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRegionClassType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#installedInSatellite"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#just_east"/>
+        <ObjectProperty IRI="#east"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#just_north"/>
+        <ObjectProperty IRI="#north"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#just_south"/>
+        <ObjectProperty IRI="#south"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#just_west"/>
+        <ObjectProperty IRI="#west"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#north"/>
+        <ObjectProperty IRI="#directionalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#north_east"/>
+        <ObjectProperty IRI="#directionalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#north_west"/>
+        <ObjectProperty IRI="#directionalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#south"/>
+        <ObjectProperty IRI="#directionalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#south_east"/>
+        <ObjectProperty IRI="#directionalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#south_west"/>
+        <ObjectProperty IRI="#directionalRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_bounded_east"/>
+        <ObjectProperty IRI="#bounded_east"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_bounded_east"/>
+        <ObjectProperty IRI="#east"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_bounded_east"/>
+        <ObjectProperty IRI="#strong_east"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_bounded_north"/>
+        <ObjectProperty IRI="#bounded_north"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_bounded_north"/>
+        <ObjectProperty IRI="#north"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_bounded_north"/>
+        <ObjectProperty IRI="#strong_north"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_bounded_south"/>
+        <ObjectProperty IRI="#bounded_south"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_bounded_south"/>
+        <ObjectProperty IRI="#south"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_bounded_south"/>
+        <ObjectProperty IRI="#strong_south"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_bounded_west"/>
+        <ObjectProperty IRI="#bounded_west"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_bounded_west"/>
+        <ObjectProperty IRI="#strong_west"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_bounded_west"/>
+        <ObjectProperty IRI="#west"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_east"/>
+        <ObjectProperty IRI="#east"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_north"/>
+        <ObjectProperty IRI="#north"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_north_east"/>
+        <ObjectProperty IRI="#north_east"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_north_west"/>
+        <ObjectProperty IRI="#north_west"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_south"/>
+        <ObjectProperty IRI="#south"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_south_east"/>
+        <ObjectProperty IRI="#south_east"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_south_west"/>
+        <ObjectProperty IRI="#south_west"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strong_west"/>
+        <ObjectProperty IRI="#west"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_bounded_east"/>
+        <ObjectProperty IRI="#bounded_east"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_bounded_east"/>
+        <ObjectProperty IRI="#east"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_bounded_east"/>
+        <ObjectProperty IRI="#weak_east"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_bounded_north"/>
+        <ObjectProperty IRI="#bounded_north"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_bounded_north"/>
+        <ObjectProperty IRI="#north"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_bounded_north"/>
+        <ObjectProperty IRI="#weak_north"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_bounded_south"/>
+        <ObjectProperty IRI="#bounded_south"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_bounded_south"/>
+        <ObjectProperty IRI="#south"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_bounded_south"/>
+        <ObjectProperty IRI="#weak_south"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_bounded_west"/>
+        <ObjectProperty IRI="#bounded_west"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_bounded_west"/>
+        <ObjectProperty IRI="#weak_west"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_bounded_west"/>
+        <ObjectProperty IRI="#west"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_east"/>
+        <ObjectProperty IRI="#east"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_north"/>
+        <ObjectProperty IRI="#north"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_north_east"/>
+        <ObjectProperty IRI="#north_east"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_north_west"/>
+        <ObjectProperty IRI="#north_west"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_south"/>
+        <ObjectProperty IRI="#south"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_south_east"/>
+        <ObjectProperty IRI="#south_east"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_south_west"/>
+        <ObjectProperty IRI="#south_west"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weak_west"/>
+        <ObjectProperty IRI="#west"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#west"/>
+        <ObjectProperty IRI="#directionalRelation"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#NTPP"/>
+        <ObjectProperty IRI="#NTPPi"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#TPP"/>
+        <ObjectProperty IRI="#TPPi"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#belongsToImage"/>
+        <ObjectProperty IRI="#consistsOfTile"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#belongsToTile"/>
+        <ObjectProperty IRI="#consistsOfRegion"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#east"/>
+        <ObjectProperty IRI="#west"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#just_east"/>
+        <ObjectProperty IRI="#just_west"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#just_north"/>
+        <ObjectProperty IRI="#just_south"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#north"/>
+        <ObjectProperty IRI="#south"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#north_east"/>
+        <ObjectProperty IRI="#south_west"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#north_west"/>
+        <ObjectProperty IRI="#south_east"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#strong_east"/>
+        <ObjectProperty IRI="#strong_west"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#strong_north"/>
+        <ObjectProperty IRI="#strong_south"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#strong_north_east"/>
+        <ObjectProperty IRI="#strong_south_west"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#strong_north_west"/>
+        <ObjectProperty IRI="#strong_south_east"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#weak_east"/>
+        <ObjectProperty IRI="#weak_west"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#weak_north"/>
+        <ObjectProperty IRI="#weak_south"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#weak_north_east"/>
+        <ObjectProperty IRI="#weak_south_west"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#weak_north_west"/>
+        <ObjectProperty IRI="#weak_south_east"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasRegionClassType"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#DC"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#EC"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#EQ"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#PO"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#EQ"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#NTPP"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#NTPPi"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EC"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aquiredBySensor"/>
+        <Class IRI="#SatelliteImage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToImage"/>
+        <Class IRI="#Tile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToTile"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consistsOfRegion"/>
+        <Class IRI="#Tile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consistsOfTile"/>
+        <Class IRI="#SatelliteImage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#directionalRelation"/>
+        <Class IRI="#BoundingBox"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBBox"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCentroid"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRegionClassType"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTileCentreNearByPlaceGeoName"/>
+        <Class IRI="#Tile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#installedInSatellite"/>
+        <Class IRI="#Sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EC"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aquiredBySensor"/>
+        <Class IRI="#Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToImage"/>
+        <Class IRI="#SatelliteImage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToTile"/>
+        <Class IRI="#Tile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consistsOfRegion"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consistsOfTile"/>
+        <Class IRI="#Tile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#directionalRelation"/>
+        <Class IRI="#BoundingBox"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBBox"/>
+        <Class IRI="#BoundingBox"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCentroid"/>
+        <Class IRI="#RegionCentroid"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTileCentreNearByPlaceGeoName"/>
+        <Class IRI="http://www.geonames.org/ontology#Feature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#installedInSatellite"/>
+        <Class IRI="#Satellite"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SD_G"/>
+        <DataProperty IRI="#colorFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SD_L"/>
+        <DataProperty IRI="#colorFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SD_NIR"/>
+        <DataProperty IRI="#colorFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SD_R"/>
+        <DataProperty IRI="#colorFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SD_a"/>
+        <DataProperty IRI="#colorFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SD_b"/>
+        <DataProperty IRI="#colorFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SD_glcm_contrast"/>
+        <DataProperty IRI="#textureFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SD_glcm_correlation"/>
+        <DataProperty IRI="#textureFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SD_glcm_dissimilarity"/>
+        <DataProperty IRI="#textureFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SD_glcm_entropy"/>
+        <DataProperty IRI="#textureFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SD_glcm_homogeneity"/>
+        <DataProperty IRI="#textureFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SD_glcm_mean"/>
+        <DataProperty IRI="#textureFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SD_glcm_second_moment"/>
+        <DataProperty IRI="#textureFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SD_glcm_variance"/>
+        <DataProperty IRI="#textureFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SD_mndwi"/>
+        <DataProperty IRI="#indices"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SD_ndvi"/>
+        <DataProperty IRI="#indices"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#area"/>
+        <DataProperty IRI="#shapeFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#colorFeatures"/>
+        <DataProperty IRI="#regionFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#elongation"/>
+        <DataProperty IRI="#shapeFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#extent"/>
+        <DataProperty IRI="#shapeFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasHeight"/>
+        <DataProperty IRI="#hasDimension"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasImageDataType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasImageOriginLat"/>
+        <DataProperty IRI="#hasImageOrigin"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasImageOriginLong"/>
+        <DataProperty IRI="#hasImageOrigin"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLeftLong"/>
+        <DataProperty IRI="#hasGeoExtent"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLowerLat"/>
+        <DataProperty IRI="#hasGeoExtent"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasNumberOfBands"/>
+        <DataProperty IRI="#hasDimension"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasRediometricResolution"/>
+        <DataProperty IRI="#hasResolution"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasRightLong"/>
+        <DataProperty IRI="#hasGeoExtent"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasScenePath"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSpatialResolution"/>
+        <DataProperty IRI="#hasResolution"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSpectralResolution"/>
+        <DataProperty IRI="#hasResolution"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasTemporalResolution"/>
+        <DataProperty IRI="#hasResolution"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasTileCentreLat"/>
+        <DataProperty IRI="#hasTileCentre"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasTileCentreLong"/>
+        <DataProperty IRI="#hasTileCentre"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasTileOriginLat"/>
+        <DataProperty IRI="#hasTileOrigin"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasTileOriginLong"/>
+        <DataProperty IRI="#hasTileOrigin"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasUpperLat"/>
+        <DataProperty IRI="#hasGeoExtent"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasWidth"/>
+        <DataProperty IRI="#hasDimension"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#indices"/>
+        <DataProperty IRI="#regionFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#major_axis_length"/>
+        <DataProperty IRI="#shapeFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mean_G"/>
+        <DataProperty IRI="#colorFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mean_L"/>
+        <DataProperty IRI="#colorFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mean_NIR"/>
+        <DataProperty IRI="#colorFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mean_R"/>
+        <DataProperty IRI="#colorFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mean_a"/>
+        <DataProperty IRI="#colorFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mean_b"/>
+        <DataProperty IRI="#colorFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mean_glcm_contrast"/>
+        <DataProperty IRI="#textureFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mean_glcm_correlation"/>
+        <DataProperty IRI="#textureFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mean_glcm_dissimilarity"/>
+        <DataProperty IRI="#textureFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mean_glcm_entropy"/>
+        <DataProperty IRI="#textureFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mean_glcm_homogeneity"/>
+        <DataProperty IRI="#textureFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mean_glcm_mean"/>
+        <DataProperty IRI="#textureFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mean_glcm_second_moment"/>
+        <DataProperty IRI="#textureFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mean_glcm_variance"/>
+        <DataProperty IRI="#textureFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mean_mndwi"/>
+        <DataProperty IRI="#indices"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mean_ndvi"/>
+        <DataProperty IRI="#indices"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#minor_axis_length"/>
+        <DataProperty IRI="#shapeFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#orientation"/>
+        <DataProperty IRI="#shapeFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#perimeter"/>
+        <DataProperty IRI="#shapeFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#shapeFeatures"/>
+        <DataProperty IRI="#regionFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#solidity"/>
+        <DataProperty IRI="#shapeFeatures"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#textureFeatures"/>
+        <DataProperty IRI="#regionFeatures"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLeftLong"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLowerLat"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasRightLong"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasUpperLat"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#LULCClassProbabilityEstimate"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SD_G"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SD_L"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SD_NIR"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SD_R"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SD_a"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SD_b"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SD_glcm_contrast"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SD_glcm_correlation"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SD_glcm_dissimilarity"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SD_glcm_entropy"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SD_glcm_homogeneity"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SD_glcm_mean"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SD_glcm_second_moment"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SD_glcm_variance"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SD_mndwi"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SD_ndvi"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aquiredOn"/>
+        <Class IRI="#SatelliteImage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#area"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#elongation"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#extent"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDegreeOfAdjecency"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGeoCRS"/>
+        <Class IRI="#SatelliteImage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGroundSampleDistance"/>
+        <Class IRI="#SatelliteImage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasImageDataType"/>
+        <Class IRI="#SatelliteImage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasImageFormat"/>
+        <Class IRI="#SatelliteImage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasImagePixelSize"/>
+        <Class IRI="#SatelliteImage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumberOfBands"/>
+        <Class IRI="#SatelliteImage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumberOfRegions"/>
+        <Class IRI="#Tile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumberOfTiles"/>
+        <Class IRI="#SatelliteImage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSatelliteName"/>
+        <Class IRI="#Satellite"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSceneId"/>
+        <Class IRI="#SatelliteImage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasScenePath"/>
+        <Class IRI="#SatelliteImage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSceneRow"/>
+        <Class IRI="#SatelliteImage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSensorName"/>
+        <Class IRI="#Sensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTilePathInArchive"/>
+        <Class IRI="#Tile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWithinTileRegionID"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#major_axis_length"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mean_G"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mean_L"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mean_NIR"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mean_R"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mean_a"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mean_b"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mean_glcm_contrast"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mean_glcm_correlation"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mean_glcm_dissimilarity"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mean_glcm_entropy"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mean_glcm_homogeneity"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mean_glcm_mean"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mean_glcm_second_moment"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mean_glcm_variance"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mean_mndwi"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mean_ndvi"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minor_axis_length"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#orientation"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#perimeter"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#solidity"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#LULCClassProbabilityEstimate"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SD_G"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SD_L"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SD_NIR"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SD_R"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SD_a"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SD_b"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SD_glcm_contrast"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SD_glcm_correlation"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SD_glcm_dissimilarity"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SD_glcm_entropy"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SD_glcm_homogeneity"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SD_glcm_mean"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SD_glcm_second_moment"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SD_glcm_variance"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SD_mndwi"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SD_ndvi"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aquiredOn"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#area"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#elongation"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#extent"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDegreeOfAdjecency"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGeoCRS"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGroundSampleDistance"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHeight"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasImageDataType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasImageFormat"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasImageOriginLat"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasImageOriginLong"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasImagePixelSize"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLeftLong"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLowerLat"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumberOfBands"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumberOfRegions"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumberOfTiles"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRediometricResolution"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRightLong"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSatelliteName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSceneId"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasScenePath"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSceneRow"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSensorName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSpectralResolution"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTemporalResolution"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTilePathInArchive"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasUpperLat"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWidth"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWithinTileRegionID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#major_axis_length"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mean_G"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mean_L"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mean_NIR"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mean_R"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mean_a"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mean_b"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mean_glcm_contrast"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mean_glcm_correlation"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mean_glcm_dissimilarity"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mean_glcm_entropy"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mean_glcm_homogeneity"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mean_glcm_mean"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mean_glcm_second_moment"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mean_glcm_variance"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mean_mndwi"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mean_ndvi"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minor_axis_length"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#orientation"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#perimeter"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#solidity"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BoundingBox</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">&quot;Concept called &apos;BoundingBox&apos;, this is a bounding box of region&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#predictiveModel"/>
+        <IRI>#Cropland</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/project_data/ALI/SelectedData_v2/Modules/PredictiveModels/Cropland/CroplandPredictor.model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#selectedAttributes"/>
+        <IRI>#Cropland</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/project_data/ALI/SelectedData_v2/Modules/PredictiveModels/Cropland/CroplandSelectedAttributes.csv</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EC_PO_TPP_NTPP_EQ_TPPi_NTPPi</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">&quot;Bounding Box relation for EC relation between regions&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#predictiveModel"/>
+        <IRI>#Industrial_Commercial</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/project_data/ALI/SelectedData_v2/Modules/PredictiveModels/Industrial_Commercial/IndustrialCommercialPredictor.model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#selectedAttributes"/>
+        <IRI>#Industrial_Commercial</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/project_data/ALI/SelectedData_v2/Modules/PredictiveModels/Industrial_Commercial/IndustrialCommercialSelectedAttributes.csv</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PO_TPP_NTPP_EQ_TPPi_NTPPi</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">&quot;Bounding Box relation for PO relation between regions&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#predictiveModel"/>
+        <IRI>#PartiallyFloodedCropland</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/project_data/ALI/SelectedData_v2/Modules/PredictiveModels/PartiallyFloodedCropland/PartiallyFloodedCroplandPredictor.model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#selectedAttributes"/>
+        <IRI>#PartiallyFloodedCropland</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/project_data/ALI/SelectedData_v2/Modules/PredictiveModels/PartiallyFloodedCropland/PartiallyFloodedCroplandSelectedAttributes.csv</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#predictiveModel"/>
+        <IRI>#Residential</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/project_data/ALI/SelectedData_v2/Modules/PredictiveModels/Residential/ResidentialPredictor.model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#selectedAttributes"/>
+        <IRI>#Residential</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/project_data/ALI/SelectedData_v2/Modules/PredictiveModels/Residential/ResidentialSelectedAttributes.csv</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#predictiveModel"/>
+        <IRI>#River</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/project_data/ALI/SelectedData_v2/Modules/PredictiveModels/River/RiverPredictor.model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#selectedAttributes"/>
+        <IRI>#River</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/project_data/ALI/SelectedData_v2/Modules/PredictiveModels/River/RiverSelectedAttributes.csv</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#predictiveModel"/>
+        <IRI>#StagnatedFloodWater</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/project_data/ALI/SelectedData_v2/Modules/PredictiveModels/StagnatedFloodWater/StagnatedFloodWaterPredictor.model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#selectedAttributes"/>
+        <IRI>#StagnatedFloodWater</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/project_data/ALI/SelectedData_v2/Modules/PredictiveModels/StagnatedFloodWater/StagnatedFloodWaterSelectedAttributes.csv</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TPP_NTPP_EQ</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">&quot;Bounding Box relation for TPP relation between regions&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TPPi_NTPPi_EQ</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">&quot;Bounding Box spatial relation for TPPi&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#spatialRule"/>
+        <IRI>#east</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/Important_Documents/Ontologies/Ontology_v3/SpatialRules/direction/east.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasGeoExtent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">&quot;Geographical extent of a bounding box is described by left-right Longitude and upper-lower Latitude&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#spatialRule"/>
+        <IRI>#north</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/Important_Documents/Ontologies/Ontology_v3/SpatialRules/direction/north.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#spatialRule"/>
+        <IRI>#north_east</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/Important_Documents/Ontologies/Ontology_v3/SpatialRules/direction/north_east.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#spatialRule"/>
+        <IRI>#north_west</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/Important_Documents/Ontologies/Ontology_v3/SpatialRules/direction/north_west.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#spatialRule"/>
+        <IRI>#south</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/Important_Documents/Ontologies/Ontology_v3/SpatialRules/direction/south.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#spatialRule"/>
+        <IRI>#south_east</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/Important_Documents/Ontologies/Ontology_v3/SpatialRules/direction/south_east.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#spatialRule"/>
+        <IRI>#south_west</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/Important_Documents/Ontologies/Ontology_v3/SpatialRules/direction/south_west.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#topologicalRelation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">&quot;Bounding Box relation for DC relation between regions&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#spatialRule"/>
+        <IRI>#west</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">/home/geosyslab/KULDEEP/Important_Documents/Ontologies/Ontology_v3/SpatialRules/direction/west.owl</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,26 @@
+1) W3C Time ontology is updated with SWRL rules
+1) object properties "instantBefore", "instantAfter", "at" are added
+
+instantBefore: (instantBefore is inverse of instantAfter)
+'in XSD Date-Time-Stamp'(?in1, ?t1) ^ 'in XSD Date-Time-Stamp'(?in2, ?t2) ^ swrlb:lessThan(?t1, ?t2) -> instantBefore(?in1, ?in2)
+
+intervalEquals:
+hasBeginning(?inter1, ?is1) ^ hasEnd(?inter1, ?ie1) ^ hasBeginning(?inter2, ?is2) ^ hasEnd(?inter2, ?ie2) ^ at(?is1, ?is2) ^ at(?ie1, ?ie2) -> intervalEquals(?inter1, ?inter2)
+
+intervalBefore (intervalBefore is inverse of intervalAfter)
+hasBeginning(?inter1, ?is1) ^ hasEnd(?inter1, ?ie1) ^ hasBeginning(?inter2, ?is2) ^ hasEnd(?inter2, ?ie2) ^ before(?ie1, ?is2) -> intervalBefore(?inter1, ?inter2)
+
+intervalMeets (intervalMeets is inverse of intervalMetBy)
+hasBeginning(?inter1, ?is1) ^ hasEnd(?inter1, ?ie1) ^ hasBeginning(?inter2, ?is2) ^ hasEnd(?inter2, ?ie2) ^ before(?ie1, ?is2) -> intervalMeets(?inter1, ?inter2)
+
+intervalOverlaps (intervalMeets is inverse of intervalOverlappedBy)
+hasBeginning(?inter1, ?is1) ^ hasEnd(?inter1, ?ie1) ^ hasBeginning(?inter2, ?is2) ^ hasEnd(?inter2, ?ie2) ^ before(?is1,?is2) ^ after(?ie1, ?is2) ^ before(?ie1,?ie2) -> intervalOverlaps(?inter1, ?inter2)
+
+intervalStarts (intervalStarts is inverse of intervalStartedBy)
+hasBeginning(?inter1, ?is1) ^ hasEnd(?inter1, ?ie1) ^ hasBeginning(?inter2, ?is2) ^ hasEnd(?inter2, ?ie2) ^ at(?is1,?is2) ^ before(?ie1,?ie2) -> intervalStarts(?inter1, ?inter2
+
+intervalDuring (intervalDuring is inverse of intervalContains)
+hasBeginning(?inter1, ?is1) ^ hasEnd(?inter1, ?ie1) ^ hasBeginning(?inter2, ?is2) ^ hasEnd(?inter2, ?ie2) ^ after(?is1,?is2) ^ before(?ie1,?ie2) -> intervalDuring(?inter1, ?inter2
+
+intervalFinishes (intervalFinishes is inverse of intervalFinishedBy)
+hasBeginning(?inter1, ?is1) ^ hasEnd(?inter1, ?ie1) ^ hasBeginning(?inter2, ?is2) ^ hasEnd(?inter2, ?ie2) ^ after(?is1,?is2) ^ at(?ie1,?ie2) -> intervalFinishes(?inter1, ?inter2)
